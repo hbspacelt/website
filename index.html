@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HB Space TL - Innovating Technology. Transforming Lives. A Malawian technology and robotics company designing intelligent hardware and digital solutions that solve real-world challenges.">
+    <meta name="keywords" content="technology, robotics, AI, drones, mobile apps, automation, Malawi, innovation, tech solutions">
+    <meta name="author" content="HB Space TL">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="HB Space TL | Technology & Robotics Innovators">
+    <meta property="og:description" content="Innovating Technology. Transforming Lives.">
+    <meta property="og:image" content="images/logo.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="HB Space TL | Technology & Robotics Innovators">
+    <meta property="twitter:description" content="Innovating Technology. Transforming Lives.">
+    
+    <title>HB Space TL | Technology & Robotics Innovators</title>
+    <link rel="icon" type="image/jpeg" href="images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0b4fd8',
+                        secondary: '#18b76a',
+                        dark: '#0b1220',
+                        light: '#f5f9ff'
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-container">
+            <a href="#home" class="logo-container">
+                <img src="images/logo2.png" alt="HB Space TL Logo" class="logo-img">
+                <span class="text-xl font-bold text-gradient">HB Space TL</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#partnerships">Partnerships</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="menuToggle" class="md:hidden p-2" aria-label="Toggle menu" aria-expanded="false">
+                <i data-feather="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen w-full overflow-hidden">
+        <div id="particles-js" class="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20"></div>
+        <div class="absolute inset-0 bg-dark/40"></div>
+        <div class="relative z-10 h-full flex flex-col justify-center items-center text-center px-4 hero-content">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-4" style="color: transparent;">
+                <span id="typing-text"></span>
+            </h1>
+            <p class="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl fade-in-up" style="animation-delay: 0.3s">Innovating Technology. Transforming Lives.</p>
+            <a href="#services" class="px-8 py-3 bg-gradient-to-r from-primary to-secondary rounded-full text-white font-medium hover:shadow-glow transition-all duration-300 btn-gradient fade-in-up" style="animation-delay: 0.6s">
+                Explore Solutions
+            </a>
+        </div>
+        <div style="position: absolute; bottom: 3rem; left: 50%; transform: translateX(-50%); animation: bounce 2s infinite;">
+            <a href="#about" style="color: white; display: block;" aria-label="Scroll to about section">
+                <i data-feather="chevron-down" style="width: 32px; height: 32px;"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="reveal">
+        <div class="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
+            <h2 class="text-center mb-4">About <span>HB Space TL</span></h2>
+            <p class="text-center text-lg mb-8 max-w-4xl mx-auto" style="color: var(--text-secondary); line-height: 1.8;">HB Space TL is a Malawian technology and robotics company focused on designing intelligent hardware and digital solutions that solve real-world challenges. We combine innovation, engineering, and skills development to empower communities and industries.</p>
+            <p class="text-center text-base mb-12 max-w-3xl mx-auto" style="color: var(--text-muted); font-style: italic;">Based in Zomba, Malawi • Driven by Innovation • Built for Impact</p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; align-items: center;">
+                <div>
+                    <div class="glass-card" style="padding: 3rem;">
+                        <h3>Our Mission</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 2.5rem; line-height: 1.8;">To design and deliver impactful, affordable, and innovative technological solutions that improve lives, promote accessibility, and support sustainable development.</p>
+                        <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Our Values</h3>
+                        <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+                            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                                <i data-feather="check-circle" style="color: var(--secondary); width: 24px; height: 24px; margin-top: 2px; flex-shrink: 0;"></i>
+                                <span style="font-weight: 500; color: var(--text-primary);">Innovation – Creating forward-thinking solutions</span>
+                            </div>
+                            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                                <i data-feather="check-circle" style="color: var(--secondary); width: 24px; height: 24px; margin-top: 2px; flex-shrink: 0;"></i>
+                                <span style="font-weight: 500; color: var(--text-primary);">Impact – Technology that makes a real difference</span>
+                            </div>
+                            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                                <i data-feather="check-circle" style="color: var(--secondary); width: 24px; height: 24px; margin-top: 2px; flex-shrink: 0;"></i>
+                                <span style="font-weight: 500; color: var(--text-primary);">Integrity – Ethical and transparent operations</span>
+                            </div>
+                            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                                <i data-feather="check-circle" style="color: var(--secondary); width: 24px; height: 24px; margin-top: 2px; flex-shrink: 0;"></i>
+                                <span style="font-weight: 500; color: var(--text-primary);">Inclusivity – Designing for everyone</span>
+                            </div>
+                            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                                <i data-feather="check-circle" style="color: var(--secondary); width: 24px; height: 24px; margin-top: 2px; flex-shrink: 0;"></i>
+                                <span style="font-weight: 500; color: var(--text-primary);">Quality – Reliable and durable systems</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="aspect-video rounded-xl overflow-hidden shadow-xl">
+                        <img src="images/project-1.jpg" alt="Technology Innovation" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 bg-primary p-4 rounded-xl shadow-lg">
+                        <i data-feather="award" class="w-12 h-12 text-white"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="reveal">
+        <div class="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
+            <h2 class="text-center mb-4">Our <span>Projects</span></h2>
+            <p class="text-center text-lg mb-12 max-w-3xl mx-auto" style="color: var(--text-secondary);">Showcasing our innovative technology solutions and robotics projects</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <!-- Project 1 -->
+                <div class="project-card glass-card" style="overflow: hidden; border-radius: 24px; position: relative;">
+                    <div style="position: relative; overflow: hidden; aspect-ratio: 16/9;">
+                        <img src="images/project-1.jpg" alt="HB Space TL Project 1" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                    </div>
+                    <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%); opacity: 0; transition: opacity 0.3s ease; display: flex; align-items: flex-end; padding: 1.5rem;">
+                        <div style="color: white;">
+                            <h4 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Innovation Project</h4>
+                            <p style="font-size: 0.9rem; opacity: 0.9;">Cutting-edge technology solution</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card glass-card" style="overflow: hidden; border-radius: 24px; position: relative;">
+                    <div style="position: relative; overflow: hidden; aspect-ratio: 16/9;">
+                        <img src="images/project-2.jpg" alt="HB Space TL Project 2" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                    </div>
+                    <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%); opacity: 0; transition: opacity 0.3s ease; display: flex; align-items: flex-end; padding: 1.5rem;">
+                        <div style="color: white;">
+                            <h4 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Robotics Project</h4>
+                            <p style="font-size: 0.9rem; opacity: 0.9;">Advanced automation solution</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card glass-card" style="overflow: hidden; border-radius: 24px; position: relative;">
+                    <div style="position: relative; overflow: hidden; aspect-ratio: 16/9;">
+                        <img src="images/project-3.jpg" alt="HB Space TL Project 3" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                    </div>
+                    <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%); opacity: 0; transition: opacity 0.3s ease; display: flex; align-items: flex-end; padding: 1.5rem;">
+                        <div style="color: white;">
+                            <h4 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Technology Project</h4>
+                            <p style="font-size: 0.9rem; opacity: 0.9;">Digital transformation solution</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="reveal">
+        <div class="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
+            <h2 class="text-center mb-4">Services <span>We Offer</span></h2>
+            <p class="text-center text-lg mb-12 max-w-3xl mx-auto" style="color: var(--text-secondary);">Innovative solutions designed to transform industries and improve lives</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <!-- Service Card 1 -->
+                <div class="service-card glass-card">
+                    <div class="icon-wrapper">
+                        <i data-feather="cpu" style="width: 40px; height: 40px; color: white;"></i>
+                    </div>
+                    <h3>Autonomous Smart Bin</h3>
+                    <p>AI-powered waste management solutions for cleaner cities</p>
+                </div>
+                
+                <!-- Service Card 2 -->
+                <div class="service-card glass-card">
+                    <div class="icon-wrapper">
+                        <i data-feather="send" style="width: 40px; height: 40px; color: white;"></i>
+                    </div>
+                    <h3>Drones & Aerial Systems</h3>
+                    <p>Advanced UAV solutions for agriculture, surveillance and delivery</p>
+                </div>
+                
+                <!-- Service Card 3 -->
+                <div class="service-card glass-card">
+                    <div class="icon-wrapper">
+                        <i data-feather="smartphone" style="width: 40px; height: 40px; color: white;"></i>
+                    </div>
+                    <h3>Mobile Applications (APK Development)</h3>
+                    <p>Custom mobile applications for businesses and organizations</p>
+                </div>
+                
+                <!-- Service Card 4 -->
+                <div class="service-card glass-card">
+                    <div class="icon-wrapper">
+                        <i data-feather="move" style="width: 40px; height: 40px; color: white;"></i>
+                    </div>
+                    <h3>Automated Wheelchair</h3>
+                    <p>Smart mobility solutions for enhanced accessibility</p>
+                </div>
+                
+                <!-- Service Card 5 -->
+                <div class="service-card glass-card">
+                    <div class="icon-wrapper">
+                        <i data-feather="code" style="width: 40px; height: 40px; color: white;"></i>
+                    </div>
+                    <h3>Robotics Training Programs</h3>
+                    <p>Comprehensive programs to build future tech leaders</p>
+                </div>
+                
+                <!-- Service Card 6 -->
+                <div class="service-card glass-card">
+                    <div class="icon-wrapper">
+                        <i data-feather="shield" style="width: 40px; height: 40px; color: white;"></i>
+                    </div>
+                    <h3>Cybersecurity Solutions & Training</h3>
+                    <p>Protecting digital assets with cutting-edge security and comprehensive training programs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Section - Smart Bin -->
+    <section id="product" class="reveal">
+        <div class="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
+            <h2 class="text-center mb-4">Our <span>Featured Product</span></h2>
+            <p class="text-center text-lg mb-12 max-w-3xl mx-auto" style="color: var(--text-secondary);">Revolutionary AI-powered waste management solution</p>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; max-width: 1200px; margin: 0 auto;">
+                <!-- Product Image -->
+                <div class="product-image-container glass-card" style="padding: 2rem; border-radius: 24px; overflow: hidden;">
+                    <img src="images/bin.jpeg" alt="Autonomous Smart Bin" style="width: 100%; height: auto; border-radius: 16px; object-fit: cover;">
+                </div>
+                
+                <!-- Product Details -->
+                <div>
+                    <div class="glass-card" style="padding: 3rem;">
+                        <h3 style="font-size: 2rem; margin-bottom: 1rem; color: var(--text-primary);">Autonomous Smart Bin</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 2rem; line-height: 1.8; font-size: 1.1rem;">
+                            An innovative AI-powered waste management solution designed to revolutionize urban cleanliness. 
+                            This intelligent bin features autonomous operation, smart sorting capabilities, and real-time monitoring 
+                            for efficient waste collection and management.
+                        </p>
+                        
+                        <div style="margin-bottom: 2rem;">
+                            <div style="display: flex; align-items: baseline; gap: 1rem; margin-bottom: 1rem;">
+                                <span style="font-size: 3rem; font-weight: 800; background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">MWK 900,000</span>
+                            </div>
+                        </div>
+                        
+                        <button id="orderBtn" class="btn-gradient" style="width: 100%; padding: 1.25rem 3rem; font-size: 1.1rem; cursor: pointer; border: none;">
+                            <i data-feather="shopping-cart" style="width: 20px; height: 20px; margin-right: 0.5rem;"></i>
+                            Place Order
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Modal -->
+    <div id="orderModal" class="modal" style="display: none;">
+        <div class="modal-content glass-card">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+                <h2 style="font-size: 2rem; color: var(--text-primary);">Place Your Order</h2>
+                <button id="closeModal" style="background: none; border: none; color: var(--text-secondary); cursor: pointer; font-size: 2rem; line-height: 1; padding: 0; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: all 0.3s ease;" aria-label="Close modal">
+                    <i data-feather="x" style="width: 24px; height: 24px;"></i>
+                </button>
+            </div>
+            
+            <div style="margin-bottom: 2rem;">
+                <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1.5rem;">
+                    <img src="images/bin.jpeg" alt="Autonomous Smart Bin" style="width: 120px; height: 120px; object-fit: cover; border-radius: 12px; border: 2px solid var(--glass-border);">
+                    <div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--text-primary);">Autonomous Smart Bin</h3>
+                        <p style="font-size: 1.5rem; font-weight: 700; background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">MWK 900,000</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-bottom: 2rem;">
+                <h3 style="font-size: 1.25rem; margin-bottom: 1.5rem; color: var(--text-primary); border-bottom: 2px solid var(--glass-border); padding-bottom: 0.75rem;">
+                    <i data-feather="credit-card" style="width: 20px; height: 20px; margin-right: 0.5rem; vertical-align: middle;"></i>
+                    Payment Methods
+                </h3>
+                
+                <!-- Bank Transfer -->
+                <div class="payment-option glass-card" style="padding: 1.5rem; margin-bottom: 1.5rem; border: 2px solid var(--glass-border);">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <i data-feather="building" style="width: 24px; height: 24px; color: var(--primary);"></i>
+                        <h4 style="font-size: 1.1rem; color: var(--text-primary);">Bank Transfer (NBS)</h4>
+                    </div>
+                    <div style="display: grid; gap: 0.75rem; color: var(--text-secondary); font-size: 0.95rem;">
+                        <div style="display: flex; justify-content: space-between;">
+                            <span style="font-weight: 600; color: var(--text-primary);">Bank:</span>
+                            <span>NBS</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between;">
+                            <span style="font-weight: 600; color: var(--text-primary);">Account Name:</span>
+                            <span>HB Space TL</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between;">
+                            <span style="font-weight: 600; color: var(--text-primary);">Account Number:</span>
+                            <span style="font-family: monospace; font-size: 1.1rem; color: var(--primary);">24422682</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between;">
+                            <span style="font-weight: 600; color: var(--text-primary);">Branch:</span>
+                            <span>Zomba</span>
+                        </div>
+                    </div>
+                    <button class="copy-btn" data-copy="24422682" style="margin-top: 1rem; padding: 0.5rem 1rem; background: rgba(11, 79, 216, 0.2); border: 1px solid var(--primary); border-radius: 8px; color: var(--primary); cursor: pointer; font-size: 0.9rem; transition: all 0.3s ease;">
+                        <i data-feather="copy" style="width: 16px; height: 16px; margin-right: 0.5rem; vertical-align: middle;"></i>
+                        Copy Account Number
+                    </button>
+                </div>
+                
+                <!-- PayPal -->
+                <div class="payment-option glass-card" style="padding: 1.5rem; margin-bottom: 1.5rem; border: 2px solid var(--glass-border);">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <i data-feather="dollar-sign" style="width: 24px; height: 24px; color: var(--primary);"></i>
+                        <h4 style="font-size: 1.1rem; color: var(--text-primary);">PayPal</h4>
+                    </div>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem; font-size: 0.95rem;">
+                        Pay securely using PayPal. You will be redirected to PayPal's secure payment page.
+                    </p>
+                    <a href="https://www.paypal.com/paypalme/hbspacelt" target="_blank" rel="noopener noreferrer" class="btn-gradient" style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; padding: 0.75rem 1.5rem; font-size: 0.95rem;">
+                        <i data-feather="external-link" style="width: 18px; height: 18px;"></i>
+                        Pay with PayPal
+                    </a>
+                </div>
+                
+                <!-- PayChangu -->
+                <div class="payment-option glass-card" style="padding: 1.5rem; border: 2px solid var(--glass-border);">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <i data-feather="smartphone" style="width: 24px; height: 24px; color: var(--primary);"></i>
+                        <h4 style="font-size: 1.1rem; color: var(--text-primary);">PayChangu</h4>
+                    </div>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem; font-size: 0.95rem;">
+                        Pay using PayChangu mobile money. Contact us for PayChangu payment instructions.
+                    </p>
+                    <a href="#contact" class="btn-gradient" style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; padding: 0.75rem 1.5rem; font-size: 0.95rem;" onclick="document.getElementById('orderModal').style.display='none';">
+                        <i data-feather="message-circle" style="width: 18px; height: 18px;"></i>
+                        Contact for PayChangu
+                    </a>
+                </div>
+            </div>
+            
+            <div style="padding: 1.5rem; background: rgba(11, 79, 216, 0.1); border-radius: 12px; border: 1px solid rgba(11, 79, 216, 0.3);">
+                <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">
+                    <i data-feather="info" style="width: 18px; height: 18px; margin-right: 0.5rem; vertical-align: middle; color: var(--primary);"></i>
+                    <strong style="color: var(--text-primary);">Note:</strong> After making payment, please contact us at 
+                    <a href="mailto:hbspacelt@gmail.com" style="color: var(--primary); text-decoration: none;">hbspacelt@gmail.com</a> 
+                    or call <a href="tel:+265980054591" style="color: var(--primary); text-decoration: none;">+265 980 054 591</a> 
+                    with your payment confirmation to complete your order.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Core Team Section -->
+    <section id="team" class="reveal">
+        <div class="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
+            <h2 class="text-center mb-4">Our <span>Core Team</span></h2>
+            <p class="text-center text-lg mb-12 max-w-3xl mx-auto" style="color: var(--text-secondary);">Meet the visionaries driving innovation forward</p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                <!-- Team Member 1 - Co-Founder -->
+                <div class="team-card glass-card">
+                    <div class="avatar">
+                        <img src="images/archangel-bakolo-co-founder.jpg" alt="Archangel Bakolo">
+                    </div>
+                    <h3>Archangel Bakolo</h3>
+                    <p class="role">Co-Founder</p>
+                </div>
+                
+                <!-- Team Member 2 - Founder & NED -->
+                <div class="team-card glass-card">
+                    <div class="avatar">
+                        <img src="images/hudson-mwangalika-founder-ned.jpg" alt="Hudson jr mwangalika">
+                    </div>
+                    <h3>Hudson jr Mwangalika</h3>
+                    <p class="role">Founder & Non-Executive Director (NED)</p>
+                </div>
+                
+                <!-- Team Member 3 - CEO -->
+                <div class="team-card glass-card">
+                    <div class="avatar">
+                        <img src="images/hannah-bokosi-ceo.jpg" alt="Hannah thwandie bokosi">
+                    </div>
+                    <h3>Hannah Thwandie Bokosi</h3>
+                    <p class="role">Chief Executive Officer (CEO)</p>
+                </div>
+
+                <!-- Team Member 4 - Manager -->
+                <div class="team-card glass-card">
+                    <div class="avatar">
+                        <img src="images/madalitso-bagus-manager.jpg" alt="Madalitso Gaffar Bagus">
+                    </div>
+                    <h3>Madalitso Gaffar Bagus</h3>
+                    <p class="role">Manager</p>
+                </div>
+                
+                
+                <!-- Team Member 5 - Accountant -->
+                <div class="team-card glass-card">
+                    <div class="avatar">
+                        <img src="images/andrew-kongola-accountant.jpg" alt="Andrew kongola">
+                    </div>
+                    <h3>Andrew Kongola</h3>
+                    <p class="role">Accountant</p>
+                </div>
+                
+                <!-- Team Member 6 - Business Manager -->
+                <div class="team-card glass-card">
+                    <div class="avatar">
+                        <img src="images/hope-banda-business-manager.jpg" alt="Hope banda">
+                    </div>
+                    <h3>Hope Banda</h3>
+                    <p class="role">Business Manager</p>
+                </div>
+
+                <!-- Team Member 7 - IOT Manager -->
+                <div class="team-card glass-card">
+                    <div class="avatar">
+                        <img src="images/allan-aloe.jpg" alt="Allan Aloe">
+                    </div>
+                    <h3>Allan Aloe</h3>
+                    <p class="role">IOT Manager</p>
+                </div>
+                
+                <!-- Team Member 8 - Graphic Designer -->
+                <div class="team-card glass-card">
+                    <div class="avatar">
+                        <img src="images/isaac-tobias-graphics-design.jpg" alt="Isaac tobias">
+                    </div>
+                    <h3>Isaac Tobias</h3>
+                    <p class="role">Graphic Designer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnerships Section -->
+    <section id="partnerships" class="reveal">
+        <div class="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
+            <h2 class="text-center mb-4">Our <span>Partnerships</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
+                <!-- Partnership 1 - Beacon of Nexus Charity -->
+                <div class="partner-card glass-card p-6 rounded-xl flex flex-col items-center justify-center hover:shadow-glow transition-all duration-300">
+                    <img src="images/Partnership1.jpeg" alt="Beacon of Nexus Charity Logo" class="h-12 object-contain mb-3">
+                    <p style="color: var(--text-secondary); font-weight: 500; text-align: center;">Beacon of Nexus Charity</p>
+                </div>
+                <!-- Partnership 2 - Zomba City Council -->
+                <div class="partner-card glass-card p-6 rounded-xl flex flex-col items-center justify-center hover:shadow-glow transition-all duration-300">
+                    <img src="images/Partnerships2.jpeg" alt="Zomba City Council Logo" class="h-12 object-contain mb-3">
+                    <p style="color: var(--text-secondary); font-weight: 500; text-align: center;">Zomba City Council</p>
+                </div>
+                <!-- Partnership 3 - Additional Partner -->
+                <div class="partner-card glass-card p-6 rounded-xl flex flex-col items-center justify-center hover:shadow-glow transition-all duration-300">
+                    <img src="images/Partnership3.jpeg" alt="Additional Partnership Logo" class="h-12 object-contain mb-3">
+                    <p style="color: var(--text-secondary); font-weight: 500; text-align: center;">National Youth Council</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flyer Section -->
+    
+    <!-- Achievements Section -->
+    <section id="achievements" class="reveal">
+        <div class="max-w-7xl mx-auto px-4 md:px-8 lg:px-16 text-center">
+            <h2 class="mb-4">Our <span>Achievements</span></h2>
+            <p class="text-lg mb-8 max-w-3xl mx-auto" style="color: var(--text-secondary);">Pre-Award Achievement Tier 1 – National Youth Council<br>
+            We are proud to have received Pre-Award Recognition from the National Youth Council, a milestone that acknowledges our innovation, vision, and commitment to youth-led technological solutions. This recognition reflects the credibility of our work, the potential impact of our projects, and our alignment with national development goals. Being pre-awarded by the National Youth Council strengthens our mission to design inclusive, locally driven technologies that address real societal challenges.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="partner-card glass-card p-6 rounded-xl flex flex-col items-center justify-center hover:shadow-glow transition-all duration-300">
+                    <img src="images/award-image1.jpeg" alt="Pre-Award Certificate 1" class="h-40 object-contain mb-4" loading="lazy" decoding="async">
+                    <p style="color: var(--text-secondary); font-weight: 500; text-align: center;">Pre-Award Certificate</p>
+                </div>
+                <div class="partner-card glass-card p-6 rounded-xl flex flex-col items-center justify-center hover:shadow-glow transition-all duration-300">
+                    <img src="images/award-image2.jpeg" alt="Pre-Award Certificate 2" class="h-40 object-contain mb-4" loading="lazy" decoding="async">
+                    <p style="color: var(--text-secondary); font-weight: 500; text-align: center;">National Youth Council Recognition</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="flyer" class="reveal">
+        <div class="max-w-7xl mx-auto px-4 md:px-8 lg:px-16 text-center">
+            <h2 class="mb-4">Download Our <span>Company Flyer</span></h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto" style="color: var(--text-secondary);">Get an overview of our services, achievements, and contact information in one convenient document.</p>
+            
+            <div class="flyer-card glass-card p-4 rounded-xl mx-auto mb-8 hover:shadow-glow transition-all duration-500">
+                <img src="images/flyer.jpg" alt="HB Space TL Company Flyer" class="rounded-lg">
+            </div>
+            
+            <a href="images/flyer.jpg" download="HB-Space-TL-Flyer.jpg" class="btn-gradient">
+                <i data-feather="download" style="width: 20px; height: 20px;"></i>
+                Download Flyer
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="reveal">
+        <div class="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
+            <h2 class="text-center mb-4">Get In <span>Touch</span></h2>
+            <p class="text-center text-lg mb-12 max-w-3xl mx-auto" style="color: var(--text-secondary);">Let's build the future together</p>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="glass-card" style="padding: 3rem;">
+                    <h3 style="margin-bottom: 2rem;">Send Us a Message</h3>
+                    <form action="https://formspree.io/f/mykzrjoz" method="POST" style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <div>
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div>
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div>
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                        <div id="form-status" style="display: none; padding: 1rem; border-radius: 8px; margin-top: 1rem;"></div>
+                    </form>
+                </div>
+                
+                <!-- Contact Info & Map -->
+                <div>
+                    <div class="glass-card mb-8" style="padding: 3rem;">
+                        <h3 style="margin-bottom: 2rem;">Contact Information</h3>
+                        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                                <i data-feather="map-pin" style="width: 24px; height: 24px; color: var(--primary); margin-top: 4px; flex-shrink: 0;"></i>
+                                <div>
+                                    <h4 style="font-weight: 600; margin-bottom: 0.25rem; color: var(--text-primary);">Address</h4>
+                                    <p style="color: var(--text-secondary);">P.O. Box 43, Zomba Urban</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                                <i data-feather="mail" style="width: 24px; height: 24px; color: var(--primary); margin-top: 4px; flex-shrink: 0;"></i>
+                                <div>
+                                    <h4 style="font-weight: 600; margin-bottom: 0.25rem; color: var(--text-primary);">Email</h4>
+                                    <p style="color: var(--text-secondary);">hbspacelt@gmail.com</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                                <i data-feather="phone" style="width: 24px; height: 24px; color: var(--primary); margin-top: 4px; flex-shrink: 0;"></i>
+                                <div>
+                                    <h4 style="font-weight: 600; margin-bottom: 0.25rem; color: var(--text-primary);">Phone</h4>
+                                    <p style="color: var(--text-secondary);"> +265 980 054 591</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-card" style="overflow: hidden; padding: 0;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.1234567890123!2d35.12345678901234!3d-15.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTXCsDA3JzI0LjQiUyAzNcKwMDcnMjQuNCJF!5e0!3m2!1sen!2smw!4v1234567890123!5m2!1sen!2smw" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem; margin-bottom: 3rem;">
+                <div>
+                    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem;">
+                        <img src="images/logo.png" alt="HB Space TL Logo" style="height: 45px; width: auto;">
+                        <span style="font-size: 1.25rem; font-weight: 700; color: var(--text-primary);">HB Space TL</span>
+                    </div>
+                    <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.5rem;">Driven by Innovation • Built for Impact.</p>
+                    <div style="display: flex; gap: 1rem; align-items: center;">
+                        <a href="https://facebook.com/profile.php?id=61558573546469" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Visit our Facebook page">
+                            <i data-feather="facebook" style="width: 24px; height: 24px;"></i>
+                        </a>
+                        <a href="https://youtube.com/@hbspacelt?si=CBV9pn0AO1_KQ6x8" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Visit our YouTube channel">
+                            <i data-feather="youtube" style="width: 24px; height: 24px;"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 style="margin-bottom: 1.5rem; color: var(--text-primary);">Quick Links</h3>
+                    <ul style="display: flex; flex-direction: column; gap: 0.75rem; list-style: none;">
+                        <li><a href="#about" style="color: var(--text-secondary); text-decoration: none; transition: all 0.3s ease; display: inline-block;">About Us</a></li>
+                        <li><a href="#services" style="color: var(--text-secondary); text-decoration: none; transition: all 0.3s ease; display: inline-block;">Services</a></li>
+                        <li><a href="#team" style="color: var(--text-secondary); text-decoration: none; transition: all 0.3s ease; display: inline-block;">Our Team</a></li>
+                        <li><a href="#contact" style="color: var(--text-secondary); text-decoration: none; transition: all 0.3s ease; display: inline-block;">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 style="margin-bottom: 1.5rem; color: var(--text-primary);">Contact Info</h3>
+                    <ul style="display: flex; flex-direction: column; gap: 1rem; list-style: none; color: var(--text-secondary);">
+                        <li style="display: flex; align-items: center; gap: 0.75rem;">
+                            <i data-feather="map-pin" style="width: 18px; height: 18px; flex-shrink: 0;"></i>
+                            <span>P.O. Box 43, Zomba Urban</span>
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 0.75rem;">
+                            <i data-feather="mail" style="width: 18px; height: 18px; flex-shrink: 0;"></i>
+                            <span> hbspacelt@gmail.com</span>
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 0.75rem;">
+                            <i data-feather="phone" style="width: 18px; height: 18px; flex-shrink: 0;"></i>
+                            <span>+265 980 054 591</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div style="border-top: 1px solid var(--glass-border); padding-top: 2rem; text-align: center; color: var(--text-secondary);">
+                <p>&copy; 2026 HB Space TL. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" aria-label="Scroll to top">
+        <i data-feather="arrow-up" style="width: 24px; height: 24px;"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
